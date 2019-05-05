@@ -1,0 +1,17 @@
+.titre {
+  text-align: center;
+}
+
+.boutonChoixJeu {
+  width: 100px;
+  height: 80px;
+}
+
+.choixJeu {
+  text-align: center;
+}
+
+#listeJeux {
+  display: flex;
+  justify-content: space-around;
+}
