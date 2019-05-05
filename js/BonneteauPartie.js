@@ -1,12 +1,8 @@
-
-
 class Partie {
     constructor() {
         this.difficultLevel = 0;
         this.nbTours = 0;
-        //  this.coordonneesCartes = [60, 300, 540];
         this.listCartes = ["#carte1", "#carte2", "#carte3"];
-
         this.masquerToutHtml();
         this.afficherTitreHtml();
         this.choixBoutonsDifficulte();
@@ -15,7 +11,9 @@ class Partie {
     masquerToutHtml() {
         $('#titre').css('display', 'none');
         $('#plateau').css('display', 'none');
+        $('#choisir').css('display', 'none');
         $('#resultat').css('display', 'none');
+        $('#rejouer').css('display', 'none');
     }
 
     afficherTitreHtml() {
@@ -24,7 +22,6 @@ class Partie {
     }
 
     choixBoutonsDifficulte() {
-        console.log("depart original:" + this.coordonneesCartes);
         $("#facile").one('click', function () {
             $("#facile").css("background-color", "green");
             $("#facile").css('pointer-events', 'none');
@@ -58,17 +55,12 @@ class Partie {
     }
 
     afficherMessageDebut() {
-        //   "use strict";
         $('#messageDebut').css('display', '');
-        //   setTimeout(function () {
         this.masquerToutHtml()
         this.afficherPlateau();
-        //  }.bind(this), 1000);
     }
 
     afficherPlateau() {
-        //   "use strict";
-        //   console.log("creation plateau");
         $('#plateau').css('display', '');
         this.choixPret();
     }
@@ -79,23 +71,21 @@ class Partie {
             case 2: { this.nbTours = Math.floor(Math.random() * 3 + 6); } break;
             case 3: { this.nbTours = Math.floor(Math.random() * 3 + 9); } break;
         }
-        console.log(this.nbTours);
         $("#isReady").one('click', function () {
             $("#isReady").css('display', 'none');
             setTimeout(function () {
-                $("#carte1").css("background-image", "url('img/carte4.png')");
+                $("#carte1").css("background-image", "url('../img/bonneteau/carte4.png')");
                 $("#carte1").css("background-size", "cover");
-                $("#carte3").css("background-image", "url('img/carte4.png')");
+                $("#carte3").css("background-image", "url('../img/bonneteau/carte4.png')");
                 $("#carte3").css("background-size", "cover");
             }.bind(this), 800);
             setTimeout(function () {
-                $("#carte2").css("background-image", "url('img/carte4.png')");
+                $("#carte2").css("background-image", "url('../img/bonneteau/carte4.png')");
                 $("#carte2").css("background-size", "cover");
             }.bind(this), 1500);
             let mixeCarte = setInterval(() => {
                 let melange = new Melange(this.listCartes, this.difficultLevel)
                 let maj = setTimeout(() => {
-                    // this.coordonneesCartes = melange.coordCartesArrivee;
                     this.listCartes = melange.listCartesArrivee;
                 }, 1200);
                 this.nbTours--;
@@ -106,51 +96,40 @@ class Partie {
     }
 
     tirageJoueur() {
-        /*   gerer le click du joueur sur une Carte
-        creer litener d'abord 
-        puis retournage carte 
-        puis gagne perdu 
-        puis si perdu retourne la bonne carte
-       */
-      
-      $('#resultatGagne').css('display', 'none');
-      $('#resultatPerdu').css('display', 'none');
-       $('#resultat').css('display', '');
-
-
-
+        $('#resultatGagne').css('display', 'none');
+        $('#resultatPerdu').css('display', 'none');
+        $('#resultat').css('display', '');
+        setTimeout(function () {
+            $('#choisir').css('display', '');
+        }.bind(this), 1500);
         $("#carte1").one('click', function () {
-            $("#carte1").css("background-image", "url('img/carte1.png')");
+            $("#carte1").css("background-image", "url('../img/bonneteau/carte1.png')");
             $("#carte1").css("background-size", "cover");
             $('#resultatPerdu').css('display', '');
+            $('#choisir').css('display', 'none');
             let reponse = setTimeout(() => {
-                $("#carte2").css("background-image", "url('img/carte2.png')");
-            $("#carte2").css("background-size", "cover");
+                $("#carte2").css("background-image", "url('../img/bonneteau/carte2.png')");
+                $("#carte2").css("background-size", "cover");
+                $('#rejouer').css('display', '');
             }, 1000);
         });
-
         $("#carte2").one('click', function () {
-            $("#carte2").css("background-image", "url('img/carte2.png')");
+            $("#carte2").css("background-image", "url('../img/bonneteau/carte2.png')");
             $("#carte2").css("background-size", "cover");
             $('#resultatGagne').css('display', '');
+            $('#rejouer').css('display', '');
+            $('#choisir').css('display', 'none');
         });
-
         $("#carte3").one('click', function () {
-            $("#carte3").css("background-image", "url('img/carte3.png')");
+            $("#carte3").css("background-image", "url('../img/bonneteau/carte3.png')");
             $("#carte3").css("background-size", "cover");
             $('#resultatPerdu').css('display', '');
+            $('#choisir').css('display', 'none');
             let reponse = setTimeout(() => {
-                $("#carte2").css("background-image", "url('img/carte2.png')");
-            $("#carte2").css("background-size", "cover");
+                $("#carte2").css("background-image", "url('../img/bonneteau/carte2.png')");
+                $("#carte2").css("background-size", "cover");
+                $('#rejouer').css('display', '');
             }, 1000);
         });
-
-
-
     }
-
-
-
-
-
 }

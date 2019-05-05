@@ -4,26 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Jeux de Papounet</title>
-    <link rel="stylesheet" href="css/style.css" media="all">
+    <title>My Games</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/accueil.css" media="all">
 </head>
 
 <body>
 
-    <h1 class="titre" id="choixJeu">Choisir un Jeu:</h1>
-    <div id="listeJeux">
-       <div class="choixJeu">
-            <input class="boutonChoixJeu" id="bonneteau" type="image" src="img\page_accueil\bonneteau.jpg"/> 
-            <p>Bonneteau</p>
+    <h1 id="choixJeu">Bienvenue</h1>
+    <h2 id="choixJeu">Choisis un Jeu:</h2>
+    <div id="listeJeux" class="container">
+        <div class="row">
+            <a class="choixJeu col-lg-2 col-lg-offset-2" href="./pages/bonneteau.html">
+                <img class="boutonChoixJeu" id="bonneteau" src="img\page_accueil\bonneteau.jpg" />
+                <p>Bonneteau</p>
+            </a>
+            <a class="choixJeu col-lg-2 col-lg-offset-2" href="#">
+                <img class="boutonChoixJeu" id="memory" src="img\page_accueil\memory.jpg" />
+                <p>Memory</p>
+            </a>
+            <a class="choixJeu col-lg-2 col-lg-offset-2" href="#">
+                <img class="boutonChoixJeu" id="puissance4" src="img\page_accueil\Puissance4.svg" />
+                <p>Puissance 4</p>
+            </a>
+            <a class="choixJeu col-lg-2 col-lg-offset-2" href="#">
+                <img class="boutonChoixJeu" id="taquin" src="img\page_accueil\taquin.jpg" />
+                <p>Taquin</p>
+            </a>
+            <a class="choixJeu col-lg-2 col-lg-offset-2" href="#">
+                <img class="boutonChoixJeu" id="tictactoe" src="img\page_accueil\tictactoe.png" />
+                <p>TicTacToe</p>
+            </a>
+            <a class="choixJeu col-lg-2 col-lg-offset-2" href="#">
+                <img class="boutonChoixJeu" id="toucheCoule" src="img\page_accueil\touche-coule.jpg" />
+                <p>Touche Coule</p>
+            </a>
+
         </div>
-        <div class="choixJeu">
-            <input class="boutonChoixJeu" id="bobo" type="image" src="img\page_accueil\bonneteau.jpg"/> 
-            <p>Bonneteau à remplacer</p>
+        <div class="row">
+            <a class="choixJeu col-lg-2 col-lg-offset-2" href="#">
+                <img class="boutonChoixJeu" id="jeuOie" src="img\page_accueil\jeuOie.jpg" />
+                <p>Jeu de l'Oie</p>
+            </a>
+            <a class="choixJeu col-lg-2 col-lg-offset-2" href="#">
+                <img class="boutonChoixJeu" id="prochain" src="img\page_accueil\Work_In_Progress.png" />
+                <p>prochain</p>
+            </a>
+
+
+
         </div>
     </div>
 
 
-    
+
 </body>
 
 </html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bonneteau</title>
+    <link rel="stylesheet" href="../css/bonneteau.css" media="all">
+</head>
+
+<body>
+    <div id="titre">
+        <h1 id="accueil">Bienvenue sur Bonneteau</h1>
+        <div id="choixDifficulte">
+            <h2 id="difficulte">Sélectionner la difficulté:</h2>
+            <div id="boutonsDifficulte">
+                <button id="facile">Facile</button>
+                <button id="moyen">Moyen</button>
+                <button id="difficile">Difficile</button>
+            </div>
+        </div>
+        <h1 id="messageDebut">C'EST PARTI</h1>
+    </div>
+    <br />
+    <div id="plateau">
+        <button id="isReady">Prêt !</button>
+        <div id="table">
+            <div class="carte" id="carte1"></div>
+            <div class="carte" id="carte2"></div>
+            <div class="carte" id="carte3"></div>
+        </div>
+    </div>
+    <div id="choisir">
+        <h2>Choisir:</h2>
+    </div>
+    <div id="resultat">
+        <div id="resultatGagne">
+            <h2>Gagne</h2>
+        </div>
+        <div id="resultatPerdu">
+            <h2>Perdu</h2>
+        </div>
+        <div id="rejouer" class="afficherFin">
+            <a href="bonneteau.html">
+                <img id="boutonRejouer" src="../img/partage/rejouer.jpg" />
+            </a>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bonneteauMelange.js"></script>
+    <script src="../js/bonneteauPartie.js"></script>
+    <script src="../js/bonneteauMain.js"></script>
+</body>
+
+</html>

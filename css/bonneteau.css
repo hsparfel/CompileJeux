@@ -1,0 +1,45 @@
+#titre, #plateau {
+  text-align: center;
+}
+
+#facile, #moyen {
+  margin-right: 30px;
+}
+#boutonRejouer {
+  width: 50px;
+  height: 50px;
+}
+
+#table {
+  border: 1px, solid, black;
+  }
+
+.carte {
+  width: 180px;
+  height: 264px;
+}
+
+#carte1 {
+  position: absolute;
+  left: 260px;
+  top: 100px;
+  background-image: url("../img/bonneteau/carte1.png");
+  background-size: "cover";
+}
+
+#carte2 {
+  position: absolute;
+  
+  left: 500px;
+  top: 100px;
+  background-image: url("../img/bonneteau/carte2.png");
+  background-size: "cover";
+  }
+
+#carte3 {
+  position: absolute;
+  left: 740px;
+  top: 100px;
+  background-image: url("../img/bonneteau/carte3.png");
+  background-size: "cover";
+}

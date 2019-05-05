@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "kids_zone_2";
+	src: url('../font/kids_zone_2/Kids_Zone.ttf');
+}
+
+body {
+	font-family: "kids_zone_2", Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+h1,h2 {
+  text-align: center;
+}
+
+.boutonChoixJeu {
+  width: 100px;
+  height: 80px;
+  border-radius: 25%;
+}
+
+.choixJeu {
+  text-align: center;
+}
+
