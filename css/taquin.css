@@ -1,0 +1,12 @@
+#clavier {
+  height:200px;
+  width:340px;
+  padding: 0px;
+  margin: 0px ;
+  }
+
+#clavier .case {
+  margin: 0px;
+  padding:0px;
+}
+
