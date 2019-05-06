@@ -1,0 +1,41 @@
+#titre, #plateau {
+  text-align: center;
+}
+
+#facile, #moyen {
+  margin-right: 30px;
+}
+
+#table {
+  border: 1px, solid, black;
+  }
+
+.carte {
+  width: 180px;
+  height: 264px;
+}
+
+#carte1 {
+  position: absolute;
+  left: 60px;
+  top: 100px;
+  background-image: url("../img/carte1.png");
+  background-size: "cover";
+}
+
+#carte2 {
+  position: absolute;
+  
+  left: 300px;
+  top: 100px;
+  background-image: url("../img/carte2.png");
+  background-size: "cover";
+  }
+
+#carte3 {
+  position: absolute;
+  left: 540px;
+  top: 100px;
+  background-image: url("../img/carte3.png");
+  background-size: "cover";
+}
