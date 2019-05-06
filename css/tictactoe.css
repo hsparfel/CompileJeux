@@ -1,0 +1,9 @@
+#intro, #message
+{
+text-align: center;
+}
+
+#plateau {
+    display:flex;
+    justify-content: space-between
+}
