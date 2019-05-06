@@ -1,0 +1,24 @@
+
+#clavier {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px auto;
+  width:900px;
+}
+
+.grille {
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+#plateau {
+  display: flex;
+  justify-content: space-between;
+}
+
+#clavier .carte {
+  margin: 5px;
+  border: 1px solid black;
+}
+
