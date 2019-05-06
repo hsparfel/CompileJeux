@@ -1,0 +1,3 @@
+
+
+var partieEnCours = new Partie();
